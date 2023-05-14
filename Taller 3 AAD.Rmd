@@ -1,0 +1,19 @@
+---
+title: "Taller 3 AAD"
+authors: "Hector Rojas , Jorge Henao , Diego Rodriguez"
+date: "2023-05-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1. Una familia de distribuciones Pθ con θ ∈ Θ pertenece a la familia exponencial de distribucciones si su fmp/fdp puede escribirse como: 
+
+
+
+p(x|η) = h(x)exp(η(θ)t(x) − a(θ)) 
+
+
+Para funciones reales h(x), a(θ) y t(x). Muestre que tanto la distribución bernoulli (utilizada para la regresión logística), la distribución normal (utilizada en la regresión lineal) y la distribución Poisson (utilizada en la regresión Poisson sobre conteos) pertenecen a esta familia de distribuciones.
