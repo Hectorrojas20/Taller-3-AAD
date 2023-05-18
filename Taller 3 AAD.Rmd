@@ -1,7 +1,7 @@
 ---
-title: "Taller 3 AAD"
-authors: "Hector Rojas , Jorge Henao , Diego Rodriguez"
-date: "2023-05-14"
+title: "Untitled"
+author: "Hector Rojas"
+date: "2023-05-18"
 output: html_document
 ---
 
@@ -9,11 +9,75 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-1. Una familia de distribuciones Pθ con θ ∈ Θ pertenece a la familia exponencial de distribucciones si su fmp/fdp puede escribirse como: 
+**Primer punto:**
 
-
-
-p(x|η) = h(x)exp(η(θ)t(x) − a(θ)) 
-
+Una familia de distribuciones Pθ con θ ∈ Θ pertenece a la familia exponencial de distribucciones si su fmp/fdp puede escribirse como: p(x\|η) = h(x)exp(η(θ)t(x) − a(θ))
 
 Para funciones reales h(x), a(θ) y t(x). Muestre que tanto la distribución bernoulli (utilizada para la regresión logística), la distribución normal (utilizada en la regresión lineal) y la distribución Poisson (utilizada en la regresión Poisson sobre conteos) pertenecen a esta familia de distribuciones.
+
+**Respuesta**
+
+En cuanto a las distribuciones que pertenecen a la familia exponencial se denomina familia exponencial de un parámetro si se tiene o existen funciones de la forma
+
+\\[ p = \\{ p\_{\\theta}: \\theta \\in \\Theta \\} \\]
+
+será denominado de la familia exponencial si existe un parámetro
+
+\\[ c(\\theta), d(\\theta), \\theta \\in \\Theta \\]
+
+De tal forma que la función de densidad o de probabilidad \\( p(\\tilde{x},\\theta) \\) puede ser discreta de la siguiente forma
+
+\\[ p(\\tilde{x},\\theta) = \\exp\\left\\{ c(\\theta)T(\\tilde{x})+d(\\theta)+s(\\tilde{x}) \\right\\} \\cdot I_G(\\tilde{x}) \\]
+
+Donde \\( I_G(\\tilde{x}) \\) es una función indicadora de G:
+
+\\[ I_G(\\tilde{x}) = \\begin{cases} 1 & \\text{si } x \\leq 0 \\\\ 0 & \\text{en otro caso} \\end{cases} \\]
+
+En la familia exponencial, \\( T(\\tilde{x}) \\) es un estadístico suficiente y completo. La suficiencia de \\( T(\\tilde{x}) \\) con recorrido en \\( I = R_T \\) para \\( \\theta \\) se da solo si existe una función \\( g(t,\\tilde{\\theta}) \\), \\( t \\in I \\), \\( \\theta \\in \\Theta \\), y una función \\( h(\\tilde{x}) \\), \\( x \\in \\mathbb{R}\^n \\), tales que se toman como, (A, R. H., M, A. M., & C, D. M. (2012)) :
+
+\\[ p(\\tilde{x},\\tilde{\\theta}) = g(T(\\tilde{x}),\\tilde{\\theta}) \\cdot h(\\tilde{x}) \\]
+
+Para la función Poisson, si una variable aleatoria se distribuye denotada como \\( Y \\sim \\text{Pois}(\\lambda) \\), su función de probabilidad es:
+
+![](GitHub/Taller-3-AAD/imagen_5.png)
+
+se dice por tanto que
+
+![](GitHub/Taller-3-AAD/imagen_6.png)
+
+tambien a su vez concluyendo que esta distribucion pertenece a la famila exponencial
+
+Para la distribución normal, tenemos que si una variable aleatoria se distribuye como una normal \\( Y \\sim N(\\mu,\\sigma\^2) \\), sea \\( \\theta = (\\mu,\\sigma) \\), su función de densidad es:
+
+![](GitHub/Taller-3-AAD/imagen_7.png){width="589"}
+
+de ahi se tiene que
+
+![](GitHub/Taller-3-AAD/imagen_8.png)
+
+![](GitHub/Taller-3-AAD/imagen_9.png){width="428"}
+
+tambien a su vez concluyendo que esta distribucion normal pertenece a la famila exponencial
+
+Respecto a Bernoulli Una variable aleatoria de Bernoulli \\( X \\) asigna una medida de probabilidad \\( \\pi \\) al punto \\( x = 1 \\) y medida de probabilidad \\( 1 - \\pi \\) al punto \\( x = 0 \\). Más formalmente, se define como la medida de conteo en \\{0, 1\\}, y se define la siguiente función de densidad con respecto a la medida \\( v \\) Jordan(2009):
+
+![](GitHub/Taller-3-AAD/imagen_10.png)
+
+para revelar o encontrar su forma canonica como parte de la familia exponencial tomamos es tomar la exponencial del logaritmo de la forma "usual" de la densidad, por tanto
+
+![](GitHub/Taller-3-AAD/imagen_11.png){width="484"}
+
+de donde tenemos que para n
+
+![](GitHub/Taller-3-AAD/imagen_12.png)
+
+que no es más que la función logística
+
+Bibliografia:
+
+-   Martínez Gutiérrez, A. (2017). *Análisis de las primas de riesgo en seguros de automóviles :una aplicación de los modelos lineales generalizados* (p. n583xt99h) [Maestro en Ciencias, Universidad Autónoma Metropolitana Unidad Iztapalapa]. [https://doi.org/10.24275/uami.n](https://doi.org/10.24275/uami.n583xt99h)[e.12.637](https://doi.org/10.18041/1909-2458/ingeniare.12.637)
+
+-   A, R. H., M, A. M., & C, D. M. (2012). Modelos de la Familia Exponencial. *Ingeniare*, *12*, Article 12. <https://doi.org/10.18041/1909-2458/ingeniare.12.637>
+
+-   Michael I. Jordan. The exponential family: Basics. 2009. URL https://people.eecs.
+    berkeley.edu/\~jordan/courses/260-spring10/other-readings/chapter8.pdf.
