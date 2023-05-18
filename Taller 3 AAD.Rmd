@@ -39,37 +39,37 @@ En la familia exponencial, \\( T(\\tilde{x}) \\) es un estadístico suficiente y
 
 Para la función Poisson, si una variable aleatoria se distribuye denotada como \\( Y \\sim \\text{Pois}(\\lambda) \\), su función de probabilidad es:
 
-![](GitHub/Taller-3-AAD/imagen_5.png)
+![](imagen_5.png)
 
 se dice por tanto que
 
-![](GitHub/Taller-3-AAD/imagen_6.png)
+![](imagen_6.png)
 
 tambien a su vez concluyendo que esta distribucion pertenece a la famila exponencial
 
 Para la distribución normal, tenemos que si una variable aleatoria se distribuye como una normal \\( Y \\sim N(\\mu,\\sigma\^2) \\), sea \\( \\theta = (\\mu,\\sigma) \\), su función de densidad es:
 
-![](GitHub/Taller-3-AAD/imagen_7.png){width="589"}
+![](imagen_7.png)
 
 de ahi se tiene que
 
-![](GitHub/Taller-3-AAD/imagen_8.png)
+![](imagen_8.png)
 
-![](GitHub/Taller-3-AAD/imagen_9.png){width="428"}
+![](imagen_9.png)
 
 tambien a su vez concluyendo que esta distribucion normal pertenece a la famila exponencial
 
 Respecto a Bernoulli Una variable aleatoria de Bernoulli \\( X \\) asigna una medida de probabilidad \\( \\pi \\) al punto \\( x = 1 \\) y medida de probabilidad \\( 1 - \\pi \\) al punto \\( x = 0 \\). Más formalmente, se define como la medida de conteo en \\{0, 1\\}, y se define la siguiente función de densidad con respecto a la medida \\( v \\) Jordan(2009):
 
-![](GitHub/Taller-3-AAD/imagen_10.png)
+![](imagen_10.png)
 
 para revelar o encontrar su forma canonica como parte de la familia exponencial tomamos es tomar la exponencial del logaritmo de la forma "usual" de la densidad, por tanto
 
-![](GitHub/Taller-3-AAD/imagen_11.png){width="484"}
+![](imagen_11.png)
 
 de donde tenemos que para n
 
-![](GitHub/Taller-3-AAD/imagen_12.png)
+![](imagen_12.png)
 
 que no es más que la función logística
 
@@ -79,5 +79,4 @@ Bibliografia:
 
 -   A, R. H., M, A. M., & C, D. M. (2012). Modelos de la Familia Exponencial. *Ingeniare*, *12*, Article 12. <https://doi.org/10.18041/1909-2458/ingeniare.12.637>
 
--   Michael I. Jordan. The exponential family: Basics. 2009. URL https://people.eecs.
-    berkeley.edu/\~jordan/courses/260-spring10/other-readings/chapter8.pdf.
+-   Michael I. Jordan. The exponential family: Basics. 2009. URL <https://people.eecs>. berkeley.edu/\~jordan/courses/260-spring10/other-readings/chapter8.pdf.
