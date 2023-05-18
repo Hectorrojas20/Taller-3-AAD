@@ -1,6 +1,6 @@
 ---
 title: "Untitled"
-author: "Hector Rojas"
+author: "Hector Rojas , Jorge Henao , Diego Rodriguez"
 date: "2023-05-18"
 output: html_document
 ---
